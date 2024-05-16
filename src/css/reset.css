@@ -1,0 +1,12 @@
+html {
+  margin: 0;
+  padding: 0; }
+  html body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed; }
+  html ul, html ol {
+    list-style: none; }
+
+/*# sourceMappingURL=reset.css.map */
