@@ -7,7 +7,7 @@ html {
     overflow-x: hidden;
     width: 100%;
     height: 100%;
-    font-size: 1.6rem;    
+    font-size: 1.2rem;    
     font-family: 'Press Start 2P', cursive;
     font-weight: 400;
     line-height: 1.5;
@@ -43,7 +43,14 @@ html {
 // HEADER
 #header {
   img {
+    width: 80px;
     filter: drop-shadow(1px 1px 2px #3498db);
+  }
+  button > img {
+    width: 40px;
+  }
+  .icon-navbar {
+    background-color: transparent;
   }
 
   .menu__navbar {
@@ -55,7 +62,7 @@ html {
   }
   
   .nav-item {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 0 1rem;
   }
   
@@ -92,16 +99,17 @@ html {
 // BANNER
 #banner {
   position: relative;
-  overflow: hidden;
   background-image: url('./src/assets/images/cool-geometric-triangular-hallway-3d-rendering.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  height: 100vh;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
 
     h1 {
-    font-family: "Didot Bold";
-    font-size: 4.7rem;
+    font-family: "Orbitron";
+    font-size: 4.2rem;
+    font-weight: 600;
     line-height: 6.4rem;
     color: $bg-Lighter;
     }
@@ -116,7 +124,7 @@ html {
 
     .banner__btn1 {
       padding: 1.8rem 1.8rem;
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       color: $text-light;
       background-color: $bg-Lighter;
       transition: all 300ms ease-in;
@@ -131,7 +139,7 @@ html {
     
     .banner__btn2 {
       padding: 1.8rem 1.8rem;
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       color: $bg-Secondary;
       background-color: $bg-primary;
       border: 1px solid $text-dark;
@@ -165,13 +173,13 @@ html {
   }
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     padding: 1rem;
   }
 
   .description {
-    font-size: 2rem;
+    font-size: 1.4rem;
       font-family: $font-subTitle;
       font-weight: 400;
       color: $text-dark;
@@ -182,7 +190,7 @@ html {
 
     h3 {
       position: relative;
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       font-weight: bold;
       padding-bottom: 1rem;
 
@@ -200,7 +208,7 @@ html {
     p {
       font-family: $font-subTitle;
       font-weight: 400;
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       line-height: 1.8;
       margin: 2rem 0;
     }
@@ -284,21 +292,21 @@ html {
   }
 
   .form-label {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
   }
 
   .form-select,
   .form-control {
     padding: 1.4rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: $text-input;
   }
 
   option,
   select,
   :placeholder-shown {
-    padding: 1.4rem;
+    padding: 1.2rem;
   }
 
   // icono del calendario
@@ -308,7 +316,7 @@ html {
 
   .check__description {
     margin-top: 3.2rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   .form-check {
     margin-top: 3.2rem;
@@ -324,7 +332,7 @@ html {
   .btn__budget {
       position: relative;
       overflow: hidden;
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       margin-top: 4.2rem;
       padding: 2rem;
       background: linear-gradient(60deg, $bg-Secondary, $bg-Lighter); 
@@ -334,6 +342,7 @@ html {
 
           &::before {
           content: "AHORA!";
+          font-size: 1.3rem;
           position: absolute;
           display: flex;
           justify-content: center;
@@ -357,7 +366,7 @@ html {
   padding: 8rem 0;
 
   h1 {
-    margin-bottom: 3rem;
+    margin-bottom: 2.8rem;
     font-size: 3.2rem;
     font-weight: 500;
     line-height: 100%;
@@ -365,14 +374,14 @@ html {
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: $text-light;
     line-height: 30px;
     margin-bottom: 6rem;
   }
   
   span {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 300;
     color: $text-light;
   }
@@ -404,7 +413,7 @@ html {
   }
 
   ul {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 
     &::before {
       content: "";
@@ -468,7 +477,7 @@ html {
 
   .contact__btn {
     padding: 1.5rem 4rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-align: center;
     border-radius: 4px;
     background-color: $bg-Lighter;
@@ -489,12 +498,12 @@ html {
   padding-top: 2rem;
   padding-bottom: 8rem;
   h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     line-height: 42px;
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 30px;
   }
 
@@ -504,7 +513,7 @@ html {
   }
 
   span {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 100%;
     margin: 3rem 0;
   }
@@ -598,14 +607,14 @@ html {
 
   // FORMULARIO
   .form-label {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 100%;
   }
 
   .form-select,
   .form-control {
     padding: 1.4rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: $text-input;
   }
 
@@ -616,7 +625,7 @@ html {
   .btn__budget {
     position: relative;
     overflow: hidden;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding: 2rem;
     background: linear-gradient(60deg, $bg-Secondary, $bg-Lighter); 
     border-radius: 0.4rem;
@@ -625,6 +634,7 @@ html {
 
         &::before {
         content: "AHORA!";
+        font-size: 1.2rem;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -653,12 +663,12 @@ html {
   }
 
   span {
-    font-size: 2rem;
+    font-size: 1.4rem;
     line-height: 30px;
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 30px;
     font-weight: 300;
   }
@@ -688,7 +698,7 @@ html {
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: $bg-primary;
   }
 
@@ -780,7 +790,7 @@ html {
   .carousel__text {  
     margin-top: 1.5rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2.4rem;
   }
   
@@ -814,14 +824,15 @@ html {
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.4rem;
     line-height: 30px;
   }
 
   .ask__budget--btn {
     padding: 2rem 8rem;
+    font-size: 1.4rem;
     background-color: $bg-Lighter;
-    color: $text-light;
+    color: $bg-Secondary;
     border: none;
     border-radius: 4px;
     transition: transform 300ms, box-shadow 300ms;
@@ -829,6 +840,7 @@ html {
       &:hover {
           background: linear-gradient(60deg, $bg-Secondary, $bg-Lighter) border-box;
           transform: scale(1.1);
+          color: $text-light;
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
       }
   }
@@ -876,17 +888,17 @@ html {
   }
 
   h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 34px;
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 24px;
   }
 
   .blog-link {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: $bg-primary;
     background-color: $bg-Lighter;
     border-radius: 4px;
